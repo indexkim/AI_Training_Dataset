@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[ ]:
 
 
 import os
@@ -100,7 +99,7 @@ def labeling_before_sql(yyyymmdd):
     df = labeling_before(yyyymmdd)
     pymysql.install_as_MySQLdb()
     engine = create_engine('mysql+pymysql://{user}:{pw}@localhost/{db}'.format(
-        user='root', pw='2772', db='labeling_before'))
+        user='root', pw='password', db='labeling_before'))
     conn = engine.connect()
     labeling_before_sql = 'labeling_before_'+str(yyyymmdd)
     df.to_sql(name=labeling_before_sql,
