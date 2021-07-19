@@ -48,7 +48,7 @@ def labeling_to_inspection(yyyymmdd):
 
     # 경로상의 폴더수+1 로 batch naming. batch_009 까지 있으면 batch_010 생성
     c1 = 'E:/ProjectSorting01/batch_'+'%0.3d' % +int(b1+1)+'_doing'
-    c2 = 'E:/ProjectSorting02/batch_'+'%0.3d' % +         int(b2+1)+'_doing'  # doing : 업로드중이니 다운로드 불가능
+    c2 = 'E:/ProjectSorting02/batch_'+'%0.3d' % +int(b2+1)+'_doing'  # doing : 업로드중이니 다운로드 불가능
 
     copy_dict = {
 
